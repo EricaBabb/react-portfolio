@@ -1,5 +1,5 @@
 import React from 'react';
-import garden from '../../../assets/images/garden.jpg';
+import garden from '../../assets/images/garden.jpg';
 import face from '../../assets/images/face.jpg';
 import rollerskate from '../../assets/images/rollerskate.jpg';
 

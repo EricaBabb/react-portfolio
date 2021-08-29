@@ -1,36 +1,49 @@
 import React from 'react';
-import Nav from './components/Nav';
-import coverImage from '../../assets/cover/cover-image.jpg';
-function About() {
+import butlerBites from '../../assets/images/cake.jpg';
+import financeTracker from '../../assets/images/finance.jpeg';
+import inspirationalWellness from '../../assets/images/zen.jpeg';
+
+function Works() {
   return ( 
-  <div>
-    <Nav
-    firstColor= "brown"
-    secondColor= "brown"
-    thirdColor= "brown"
-    headerColor= "pink"
-    ></Nav>
-
-    <section className="my-5">
-      <h1 id="about">Who am I?</h1>
-{/* we need to call the class attribute className, as follows, because class is already a keyword in JavaScript
-
- {} means you can use JS inside */}
-      <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
-      <div className="my-2">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
-          condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna
-          mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum.
-          Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique
-          justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea
-          dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh.
-          Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
-        </p>
-      </div>
-    </section>
+    <div id="carouselExampleCaptions" classNameName="carousel slide" data-bs-ride="carousel">
+    <div className="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
+    <div className="carousel-inner">
+      <div className="carousel-item active">
+        <img src={butlerBites} className="d-block w-100" alt="..."/>
+        <div className="carousel-caption d-none d-md-block">
+          <h5>Butler Bites</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div className="carousel-item">
+        <img src={inspirationalWellness} className="d-block w-100" alt="..."/>
+        <div className="carousel-caption d-none d-md-block">
+          <h5>Inspirational Wellness</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div className="carousel-item">
+        <img src={financeTracker} className="d-block w-100" alt="..."/>
+        <div className="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button classNameName="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span classNameName="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span classNameName="visually-hidden">Previous</span>
+    </button>
+    <button classNameName="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span classNameName="carousel-control-next-icon" aria-hidden="true"></span>
+      <span classNameName="visually-hidden">Next</span>
+    </button>
+  </div>
   );
 }
 
-export default About;
+export default Works;
