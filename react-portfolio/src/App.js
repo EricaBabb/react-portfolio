@@ -1,43 +1,41 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
-import Gallery from './components/Gallery';
+import Footer from './components/Footer';
 import ContactForm from './components/Contact';
+import Works from './components/Works';
+import Resume from './components/Resume';
 
 function App() {
-  const [categories] = useState([
-    {
-      name: 'commercial',
-      description: 'Photos of grocery stores, food trucks, and other commercial projects',
-    },
-    { name: 'portraits', description: 'Portraits of people in my life' },
-    { name: 'food', description: 'Delicious delicacies' },
-    { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
+ 
+  //List all four pages
+  const [pages] = useState ([
+   { name: "About"},
+   { name: "Works"},
+   { name: "Contact"},
+   { name: "Resume"},
   ]);
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
-  const [contactSelected, setContactSelected] = useState(false);
+  const [currentPage, setCurrentPage] = useState(pages[0]);
+//Change contactSelected to pageSelected
+  // const [contactSelected, setContactSelected] = useState(pages[1]);
 
   return (
     <div>
       <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
+        pages={pages}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
       ></Nav>
       <main>
-        {!contactSelected ? (
-          <>
-            <Gallery currentCategory={currentCategory}></Gallery>
             <About></About>
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
+            <Works></Works>
+            <ContactForm></ContactForm>
+            <Resume></Resume>
       </main>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </div>
   );
 }
