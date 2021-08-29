@@ -1,23 +1,25 @@
 import React from 'react';
-import coverImage from '../../assets/cover/cover-image.jpg';
+import garden from '../../../assets/images/garden.jpg';
+import face from '../../assets/images/face.jpg';
+import rollerskate from '../../assets/images/rollerskate.jpg';
 
 
 const About = () => {
   return (
      <section>
-<div class="body-text">
+<div className="body-text">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, esse? Nihil minima harum sint animi, ab natus consequatur nam iusto omnis quisquam. Aliquid, ex magni exercitationem voluptatibus deleniti iste doloremque.</p>
         </div>
 
-    <div class="row justify-content-center mx-2">
-            <div class="card col-4 my-3 p-0 no-border">
-                <img src="./images/garden.jpg" alt=""/>
+    <div className="row justify-content-center mx-2">
+            <div className="card col-4 my-3 p-0 no-border">
+                <img src={garden} alt="black and white rose garden"/>
             </div>
-            <div class="card col-4 my-3 p-0 no-border">
-               <img src="./images/face.jpg" alt=""/>
+            <div className="card col-4 my-3 p-0 no-border">
+               <img src={face} alt="black and white portrait"/>
             </div>
-            <div class="card col-4 my-3 p-0 no-border">
-               <img src="./images/rollerskate.jpg" alt=""/>
+            <div className="card col-4 my-3 p-0 no-border">
+               <img src={rollerskate} alt="black and white rollerskating"/>
             </div>   
     </div>
      </section>
