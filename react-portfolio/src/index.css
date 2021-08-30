@@ -90,6 +90,50 @@ a:hover {
   border: none !important;
 }
 
+/* Works */
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.space-between {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card {
+  border-width: 2px !important;
+  border-color: var(--tan) !important;
+}
+
+.card-title {
+  color: #37240e !important;
+  font-family: LeHavreRegular;
+  font-size: 30px;
+}
+.card-text {
+  color: #37240e !important;
+  font-family: LeHavreRegular;
+  font-size: 20px;
+  height: 120px;
+}
+
+.card-link {
+  color: #37240e !important;
+  font-family: LeHavreRegular;
+  font-size: 25px;
+}
+
+.card-img-top {
+  width: 150px;
+  height: 180px;
+}
+
 /* Contact */
 
 .form-center {

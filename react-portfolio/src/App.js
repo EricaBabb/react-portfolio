@@ -44,7 +44,12 @@ import face from './assets/images/face.jpg';
 import rollerskate from './assets/images/rollerskate.jpg';
 import butlerBites from './assets/images/cake.jpg';
 import financeTracker from './assets/images/finance.jpeg';
+import network from './assets/images/network.jpeg';
+import workDay from './assets/images/work-day.jpeg';
 import inspirationalWellness from './assets/images/zen.jpeg';
+import readMe from './assets/images/readme.png';
+
+
 
 
 export default function App() {
@@ -91,47 +96,81 @@ export default function App() {
 
 function Works() {
   return ( 
-    <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
-    <div className="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div className="carousel-inner">
-      <div className="carousel-item active">
-        <img src={butlerBites} className="d-block w-100" alt="..."/>
-        <div className="carousel-caption d-none d-md-block">
-          <h5><a href="https://butler-bites.herokuapp.com/" className="title-text">Butler Bites</a></h5>
-          <h5><a href="https://github.com/antellitocci/butler-bites" className="title-text">Github</a></h5>
-          <p className="body-text">Overflowing with Butler-commuity recipes, finding the perfect one might be biting off more than you can chew!</p>
-        </div>
-      </div>
-      <div className="carousel-item">
-        <img src={inspirationalWellness} className="d-block w-100" alt="..."/>
-        <div className="carousel-caption d-none d-md-block">
-          <h5><a href="https://seanway28.github.io/InterstellarWellness/" className="title-text">Inspirational Wellness</a></h5>
-          <h5><a href="https://github.com/seanway28/InterstellarWellness" className="title-text">Github</a></h5>
-          <p className="title-text">Need a little me-time in your life? Inspirational Wellness prioritizes mental health and drives to spark inspiration in all aspects. </p>
-        </div>
-      </div>
-      <div className="carousel-item">
-        <img src={financeTracker} className="d-block w-100" alt="..."/>
-        <div className="carousel-caption d-none d-md-block">
-        <h5><a href="https://sheltered-meadow-09243.herokuapp.com/" className="title-text">Finance Tracker</a></h5>
-          <h5><a href="https://github.com/EricaBabb/finance-pwa" className="title-text">Github</a></h5>
-          <p className="title-text">Desparate to keep your spending under control, but don't have the time to keep track of your transactions? The Finance Tracker is the app for the job! </p>
-        </div>
-      </div>
-    </div>
-    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span className="visually-hidden">Previous</span>
-    </button>
-    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span className="carousel-control-next-icon" aria-hidden="true"></span>
-      <span className="visually-hidden">Next</span>
-    </button>
-    <footer>
+    <div className="flex">
+
+<div className="card space-between" style={{width: '18rem'}}>
+  <img src={butlerBites} className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title">Butler Bites</h5>
+    <p className="card-text">Overflowing with Butler-commuity recipes, finding the perfect one might be biting off more than you can chew!</p>
+  </div>
+  <div className="card-body">
+    <a href="https://butler-bites.herokuapp.com/" className="card-link">Deployed App</a>
+    <a href="https://github.com/antellitocci/butler-bites" className="card-link">Github</a>
+  </div>
+</div>
+
+<div className="card space-between" style={{width: '18rem'}}>
+  <img src={inspirationalWellness} className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title">Inspirational Wellness</h5>
+    <p className="card-text">Need a little me-time in your life? Inspirational Wellness prioritizes mental health and drives to spark inspiration in all aspects.</p>
+  </div>
+  <div className="card-body">
+    <a href="https://seanway28.github.io/InterstellarWellness/" className="card-link">Deployed App</a>
+    <a href="https://github.com/seanway28/InterstellarWellness" className="card-link">Github</a>
+  </div>
+</div>
+
+<div className="card space-between" style={{width: '18rem'}}>
+  <img src={financeTracker} className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title">Financial Tracker</h5>
+    <p className="card-text">Desparate to keep your spending under control, but don't have the time to keep track of your transactions? The Finance Tracker is the app for the job!</p>
+  </div>
+  <div className="card-body">
+    <a href="https://sheltered-meadow-09243.herokuapp.com/" className="card-link">Deployed App</a>
+    <a href="https://github.com/EricaBabb/finance-pwa" className="card-link">Github</a>
+  </div>
+</div>
+
+<div className="card space-between" style={{width: '18rem'}}>
+  <img src={workDay} className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title">Work Day Task Handler</h5>
+    <p className="card-text">The easy-to-us schedule to stay organized and improve your time management skills!</p>
+  </div>
+  <div className="card-body">
+    <a href="https://ericababb.github.io/work-day-task/" className="card-link">Deployed App</a>
+    <a href="https://github.com/EricaBabb/work-day-task" className="card-link">Github</a>
+  </div>
+</div>
+
+<div className="card space-between" style={{width: '18rem'}}>
+  <img src={network} className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title">Social Network</h5>
+    <p className="card-text">The perfect platform for connecting with other users and sharing your own thoughts! </p>
+  </div>
+  <div className="card-body">
+    <a href="https://drive.google.com/file/d/16DHD4bXFLz3XNiB7aXcXyPTqxpks3OwX/view" className="card-link">Deployed Walkthrough</a>
+    <a href="https://github.com/EricaBabb/social-network" className="card-link">Github</a>
+  </div>
+</div>
+
+<div className="card space-between" style={{width: '18rem'}}>
+  <img src={readMe} className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title">ReadMe Generator</h5>
+    <p className="card-text">Growing tired of repetitive readmes? Save the time and energy with this generator!</p>
+  </div>
+  <div className="card-body">
+    <a href="https://drive.google.com/file/d/10tdmnpAaiDEpJjjIang5QIU6oHUAbf18/view (Links to an external site.)" className="card-link">Deployed Walkthrough</a>
+    <a href="https://github.com/EricaBabb/README-Generator" className="card-link">Github</a>
+  </div>
+</div>
+
+<footer>
         <ul className="nav justify-content-end">
             <li className="nav-item">
               <a className="nav-link" href="https://github.com/EricaBabb"><img className= "icon" src={github} alt=""/></a>
@@ -144,7 +183,8 @@ function Works() {
             </li>
           </ul>
     </footer>
-  </div>
+
+</div>
   );
 }
 
@@ -232,10 +272,10 @@ function ContactForm() {
         </div>
         <div className=".form-floating mb-3">
           <label for="exampleInputName" className="form-label">Name</label>
-          <input type="text" defaultValue={name} onBlur={handleChange} class="form-control" id="exampleInputName"/>
+          <input type="text" defaultValue={name} onBlur={handleChange} className="form-control" id="exampleInputName"/>
         </div>
         <div className=".form-floating  mb-3">
-          <label for="exampleInputMessage" class="form-label">Message</label>
+          <label for="exampleInputMessage" className="form-label">Message</label>
           <input type="text" className="form-control message-control" name="message" id="exampleInputMessage" defaultValue={message} onBlur={handleChange}/>
         </div>
         {errorMessage && (
@@ -243,7 +283,7 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit" class="btn my-btn">Submit</button>
+        <button type="submit" className="btn my-btn">Submit</button>
       </form>
       </div>
       <footer>
