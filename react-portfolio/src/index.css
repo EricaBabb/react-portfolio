@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: solid red 4px; */
+  /* color: #3b3939 !important; */
+  text-decoration: none !important;
+}
+
+/* Colors */
+:root {
+  --pink: #f3afc1;
+  --dark-brown: #37240e;
+  --tan: #f1e6d2;
+}
+/* Common Fonts */
+
+@font-face {
+  font-family: Whomp;
+  src: url(./assets/css/Whomp.otf);
+}
+
+@font-face {
+  font-family: LeHavreRegular;
+  src: url(./assets/css/LeHarveRegular.otf);
+}
+.pink {
+  color: var(--pink) !important;
+}
+.brown {
+  color: var(--dark-brown) !important;
+}
+
+/* Header */
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 60px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-family: Whomp;
+}
+
+nav {
+  font-size: 35px;
+  margin-bottom: 30px;
+  font-family: LeHavreRegular;
+}
+
+a:hover {
+  color: var(--pink) !important;
+}
+
+/* Body */
+.body-text {
+  font-size: 35px;
+  margin: 80px 40px 60px 40px;
+  font-family: LeHavreRegular;
+  color: var(--dark-brown);
+}
+
+.title-text {
+  font-size: 40px;
+  font-family: LeHavreRegular;
+  color: var(--dark-brown);
+}
+
+.resume-title {
+  font-size: 45px !important;
+  margin: 80px 40px 40px 100px;
+  font-family: LeHavreRegular;
+  color: var(--dark-brown);
+}
+
+.body-text2 {
+  font-size: 25px;
+  font-family: LeHavreRegular;
+  color: var(--dark-brown);
+}
+.body-text3 {
+  font-size: 35px;
+  font-family: Whomp;
+  color: var(--pink);
+}
+
+.no-border {
+  border: none !important;
+}
+
+/* Works */
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.space-between {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card {
+  border-width: 2px !important;
+  border-color: var(--tan) !important;
+}
+
+.card-title {
+  color: #37240e !important;
+  font-family: LeHavreRegular;
+  font-size: 30px;
+}
+.card-text {
+  color: #37240e !important;
+  font-family: LeHavreRegular;
+  font-size: 20px;
+  height: 120px;
+}
+
+.card-link {
+  color: #37240e !important;
+  font-family: LeHavreRegular;
+  font-size: 25px;
+}
+
+.card-img-top {
+  width: 150px;
+  height: 180px;
+}
+
+/* Contact */
+
+.form-center {
+  display: flex !important;
+  justify-content: center !important;
+}
+.form-label {
+  font-family: LeHavreRegular;
+  font-size: 20px;
+  color: var(--dark-brown);
+}
+.form-control {
+  width: 400px !important;
+  font-family: LeHavreRegular;
+  border-width: 2px !important;
+  border-color: var(--tan) !important;
+}
+.message-control {
+  height: 100px;
+}
+.error-text {
+  font-size: 20px;
+  font-family: LeHavreRegular;
+}
+
+.my-btn {
+  font-family: Whomp;
+  font-size: 20px !important;
+  color: var(--dark-brown);
+  background-color: var(--pink) !important;
+}
+
+.my-btn:hover {
+  opacity: 0.75;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+}
