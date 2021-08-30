@@ -1,52 +1,33 @@
-import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+// import React, { useEffect } from 'react';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Link
+} from "react-router-dom";
 
-function Nav(props) {
-  const {
-    pages= [],
-    setCurrentPage,
-    currentPage,
-    // pageSelected,
-    // setPageSelected
-  } = props;
-
-useEffect(() => {
-    document.title = capitalizeFirstLetter(currentPage.name);
-  }, [currentPage]);
-
-//switch statment
+function Nav() {
+ 
   return (
+    <Router>
 <header>
-        <h1 className="center pink" ><a href="index.html" >Erica Babb</a></h1>
+        <h1><Link to="/" className="center pink">Erica Babb</Link></h1>
         <nav>
             <ul className="nav justify-content-center nav-fill brown">
                 <li className="nav-item">
-                  <a href="works.html">Works</a>
+                <Link to="/works" className= "brown"> Works</Link>
                 </li>
                 <li className="nav-item">
-                  <a href="contact.html">Contact</a>
+                <Link to="/contact" className= "brown">Contact</Link>
                 </li>
                 <li className="nav-item">
-                  <a href="resume.html">Resume</a>
+                <Link to="/resume" className= "brown">Resume</Link>
                 </li>
-
-                {pages.map((page) => (
-            <li className={`mx-1 ${
-                currentPage.name === page.name && 'navActive'
-                }`} key={page.name}>
-              <span
-                onClick={() => {
-                  setCurrentPage(page)
-                }}
-              >
-                {capitalizeFirstLetter(page.name)}
-              </span>
-            </li>
-          ))}
               </ul>
         </nav>
     </header>
+    </Router>
   );
 }
+
 
 export default Nav;

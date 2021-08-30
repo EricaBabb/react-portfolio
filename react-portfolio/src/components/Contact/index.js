@@ -36,6 +36,8 @@ function ContactForm() {
   };
 
   return (
+    <div>
+      <div className="form-center">
     <form id="contact-form" onSubmit={handleSubmit}>
         <div className=".form-floating mb-3">
           <label for="exampleInputEmail1" className="form-label">Email address</label>
@@ -56,7 +58,8 @@ function ContactForm() {
         )}
         <button type="submit" class="btn my-btn">Submit</button>
       </form>
-
+      </div>
+</div>
   );
 }
 

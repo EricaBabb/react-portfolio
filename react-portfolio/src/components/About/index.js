@@ -8,7 +8,10 @@ const About = () => {
   return (
      <section>
 <div className="body-text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, esse? Nihil minima harum sint animi, ab natus consequatur nam iusto omnis quisquam. Aliquid, ex magni exercitationem voluptatibus deleniti iste doloremque.</p>
+<h3 className="title-text">I am Erica Babb.</h3>
+        <p>
+ Butler full stack web developer bootcamp student, while also attending IUPUI full-time pursuing a major in web development and minors in informatics and biology. A baker, aspiring bodybuilder, and a love for fashion and cats.
+ </p>
         </div>
 
     <div className="row justify-content-center mx-2">

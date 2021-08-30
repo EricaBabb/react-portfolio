@@ -11,6 +11,7 @@
 :root {
   --pink: #f3afc1;
   --dark-brown: #37240e;
+  --tan: #f1e6d2;
 }
 /* Common Fonts */
 
@@ -49,7 +50,7 @@ nav {
   font-family: LeHavreRegular;
 }
 
-nav a:hover {
+a:hover {
   color: var(--pink) !important;
 }
 
@@ -61,8 +62,14 @@ nav a:hover {
   color: var(--dark-brown);
 }
 
+.title-text {
+  font-size: 40px;
+  font-family: LeHavreRegular;
+  color: var(--dark-brown);
+}
+
 .resume-title {
-  font-size: 35px;
+  font-size: 45px !important;
   margin: 80px 40px 40px 100px;
   font-family: LeHavreRegular;
   color: var(--dark-brown);
@@ -80,13 +87,14 @@ nav a:hover {
 }
 
 .no-border {
-  border: none;
+  border: none !important;
 }
 
 /* Contact */
 
-form {
-  margin-left: 50px;
+.form-center {
+  display: flex !important;
+  justify-content: center !important;
 }
 .form-label {
   font-family: LeHavreRegular;
@@ -94,18 +102,24 @@ form {
   color: var(--dark-brown);
 }
 .form-control {
-  width: 30%;
+  width: 400px !important;
   font-family: LeHavreRegular;
+  border-width: 2px !important;
+  border-color: var(--tan) !important;
 }
 .message-control {
   height: 100px;
-  width: 40%;
 }
+.error-text {
+  font-size: 20px;
+  font-family: LeHavreRegular;
+}
+
 .my-btn {
   font-family: Whomp;
-  font-size: 25px;
+  font-size: 20px !important;
   color: var(--dark-brown);
-  background-color: var(--pink);
+  background-color: var(--pink) !important;
 }
 
 .my-btn:hover {
