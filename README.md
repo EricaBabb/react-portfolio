@@ -20,10 +20,10 @@ Clone this repo using the git clone command! Once cloned, download the necessary
 
 Start your local host with "npm start."
 
-![](./src/assets/images/about-ss.png)
-![](./src/assets/images/works-ss.png)
-![](./src/assets/images/contact-ss.png)
-![](./src/assets/images/resume-ss.png)
+![](./react-portfolio/src/assets/images/about-ss.png)
+![](./react-portfolio/src/assets/images/works-ss.png)
+![](./react-portfolio/src/assets/images/contact-ss.png)
+![](./react-portfolio/src/assets/images/resume-ss.png)
 
 ## License
 
