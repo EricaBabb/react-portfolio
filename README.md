@@ -9,7 +9,6 @@ My new, updated portfolio made with React! This portfolio displays a bit about m
 * [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
-* [Tests](#tests)
 * [Questions](#questions)
   
 
