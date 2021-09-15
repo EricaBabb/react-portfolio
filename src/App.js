@@ -56,7 +56,7 @@ export default function App() {
   return (
     <Router>
       <header>
-        <h1><Link to="/" className="center pink">Erica Babb</Link></h1>
+        <h1><Link to="/about" className="center pink">Erica Babb</Link></h1>
         <nav>
             <ul className="nav justify-content-center nav-fill brown">
                 <li className="nav-item">
@@ -75,7 +75,7 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-    <Route exact path="/">
+    <Route exact path="/about">
       <About />
     </Route>
     <Route exact path="/contact">
