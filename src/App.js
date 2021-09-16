@@ -47,7 +47,7 @@ import financeTracker from './assets/images/finance.jpeg';
 import network from './assets/images/network.jpeg';
 import workDay from './assets/images/work-day.jpeg';
 import inspirationalWellness from './assets/images/zen.jpeg';
-import readMe from './assets/images/readme.png';
+import discover from './assets/images/Discover.png';
 
 
 
@@ -97,6 +97,18 @@ export default function App() {
 function Works() {
   return ( 
     <div className="flex">
+
+<div className="card space-between" style={{width: '18rem'}}>
+  <img src={discover} className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title">Discover</h5>
+    <p className="card-text">Discover erases job hunting stress by offering hundreds of job opportunities personalized to your needs!</p>
+  </div>
+  <div className="card-body">
+    <a href="https://cryptic-taiga-26271.herokuapp.com/" className="card-link">Deployed App</a>
+    <a href="https://github.com/EricaBabb/discover-job-search" className="card-link">Github</a>
+  </div>
+</div>
 
 <div className="card space-between" style={{width: '18rem'}}>
   <img src={butlerBites} className="card-img-top" alt="..."/>
@@ -155,18 +167,6 @@ function Works() {
   <div className="card-body">
     <a href="https://drive.google.com/file/d/16DHD4bXFLz3XNiB7aXcXyPTqxpks3OwX/view" className="card-link">Deployed Walkthrough</a>
     <a href="https://github.com/EricaBabb/social-network" className="card-link">Github</a>
-  </div>
-</div>
-
-<div className="card space-between" style={{width: '18rem'}}>
-  <img src={readMe} className="card-img-top" alt="..."/>
-  <div className="card-body">
-    <h5 className="card-title">ReadMe Generator</h5>
-    <p className="card-text">Growing tired of repetitive readmes? Save the time and energy with this generator!</p>
-  </div>
-  <div className="card-body">
-    <a href="https://drive.google.com/file/d/10tdmnpAaiDEpJjjIang5QIU6oHUAbf18/view (Links to an external site.)" className="card-link">Deployed Walkthrough</a>
-    <a href="https://github.com/EricaBabb/README-Generator" className="card-link">Github</a>
   </div>
 </div>
 
